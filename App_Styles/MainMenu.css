@@ -1,0 +1,8 @@
+﻿form {
+    display: flexbox;
+    min-height: 30px;
+    flex-direction: column;
+    min-width:600px;
+    background-color:lightgreen;
+  }
+

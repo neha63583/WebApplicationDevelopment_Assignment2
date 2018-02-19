@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+  <siteMapNode url="" title="COMP 2139"  description="Starting Page">
+    <siteMapNode url="~/Home.aspx" title="Home"  description="Starting Page"/>
+    <siteMapNode url="~/Customers.aspx" title="Customers"  description="Customers Page" />
+    <siteMapNode url="~/Contactlist.aspx" title="Contact List"  description="Contact List Page" />
+    <siteMapNode url="" title="Maintainance"  description="Maintance Page">
+      <siteMapNode url="~/ProductsAdmin.aspx" title="Products"  description="Products admin Page"/>
+      <siteMapNode url="~/CustomersAdmin.aspx" title="Customers"  description="Customers admin Page" />
+    </siteMapNode>
+    <siteMapNode url="~/Surveys.aspx" title="Surveys"  description="Survey Page" />
+    
+  </siteMapNode>       
+   
+</siteMap>

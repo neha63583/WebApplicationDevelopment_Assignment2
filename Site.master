@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="App_Styles/MainMenu.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div style="background:lightgreen;height:80px;"text-color: blue;><h2>&nbsp;SportsPro - Sports managment software for the sports enthusiast</h2>           
+            <asp:Menu ID="Menu1" runat="server" BackColor="White" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#003300" StaticSubMenuIndent="10px" DataSourceID="SiteMapDataSource1" BorderStyle="Outset" DynamicHoverStyle-BorderColor="#CC6699" Font-Bold="True" Orientation="Horizontal" Height="30px" DynamicVerticalOffset="5" Width="1900px">
+                <DynamicHoverStyle BackColor="lightgreen" ForeColor="#003300" BorderColor="#CC6699" />
+                <DynamicMenuItemStyle HorizontalPadding="30px" VerticalPadding="5px" />
+                <DynamicMenuStyle BackColor="#B5C7DE" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <StaticHoverStyle BackColor="lightgreen" ForeColor="#003300" />
+                <StaticMenuItemStyle HorizontalPadding="30px" VerticalPadding="5px" />
+                <StaticSelectedStyle BackColor="lightgreen" />
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+    </div>
+            
+    
+    <div>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+    </div>      
+</form>
+   <br/><br/>
+        <uc1:Footer runat="server" ID="Footer" />   
+                   
+</body>
+</html>
